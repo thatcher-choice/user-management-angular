@@ -6,7 +6,7 @@ This project is a User Management Application built using Angular framework. It 
 Clone the repository to your local machine:
 
 ```bash
-  git clone https://github.com/your_username/user-management.git
+  git clone https://github.com/thatcher-choice/user-management.git
 ```
 
 Navigate to the project directory:
