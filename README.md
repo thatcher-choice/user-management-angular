@@ -1,4 +1,4 @@
-# user-management-angular
+# User-management-angular
 This project is a User Management Application built using Angular framework. It provides functionality for managing user data including adding, updating, and deleting users. The application utilizes Angular Reactive Forms for user input handling and validation, and it includes basic styling using Bootstrap for improved visual appeal.
 
 # Setup Instructions:
@@ -6,7 +6,7 @@ This project is a User Management Application built using Angular framework. It 
 Clone the repository to your local machine:
 
 ```bash
-  git clone https://github.com/thatcher-choice/user-management.git
+  git clone https://github.com/thatcher-choice/user-management-angular
 ```
 
 Navigate to the project directory:
