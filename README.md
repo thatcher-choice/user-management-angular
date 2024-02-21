@@ -12,7 +12,7 @@ Clone the repository to your local machine:
 Navigate to the project directory:
 
 ```bash
-cd user-management
+cd user-management-angular
 ```
 Install dependencies using npm:
 ```bash
