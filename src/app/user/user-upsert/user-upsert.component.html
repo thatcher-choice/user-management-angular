@@ -1,0 +1,54 @@
+<div class="container">
+    <h2 class="text-center mt-4">{{userExists ? "Update User" : "Create User"}}</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6 row justify-content-center">
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" formControlName="firstName" class="form-control">
+              <div *ngIf="userForm.get('firstName').invalid && userForm.get('firstName').touched" class="text-danger">
+                First Name is required
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" formControlName="lastName" class="form-control">
+              <div *ngIf="userForm.get('lastName').invalid && userForm.get('lastName').touched" class="text-danger">
+                Last Name is required
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input type="text" id="address" formControlName="address" class="form-control">
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" formControlName="email" class="form-control">
+              <div *ngIf="userForm.get('email').invalid && userForm.get('email').touched" class="text-danger">
+                Email is required and must be a valid email address
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="text" id="phone" formControlName="phone" class="form-control">
+              <div *ngIf="userForm.get('phone').invalid && userForm.get('phone').touched" class="text-danger">
+                Phone is required and must be a 10-digit number
+              </div>
+            </div>
+            
+            <div class="text-center mt-3">
+                <button type="submit" class="btn btn-secondary w-100">{{userExists ? "Update" : "Add"}}</button>
+                <div *ngIf="errorMsg" class="text-danger">
+                  {{errorMsg}}
+                </div>
+              </div>
+          </form>
+      </div>
+    </div>
+</div>
+
+  
